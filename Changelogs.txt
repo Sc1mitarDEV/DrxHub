@@ -1,0 +1,4 @@
+Change Logs | Drx Hub
+
+- Added Revive
+- Added AutoPlay

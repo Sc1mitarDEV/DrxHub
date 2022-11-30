@@ -12,8 +12,10 @@ local Tab3Section = Tab3:NewSection("Cool Op Feature")
 
 --// Buttons Ig
 
-Tab3Section:NewButton("Revive Self | Working", "Cant Afford Well This Helpd", function()
-    game.ReplicatedStorage.Bricks.Revive:FireServer()
+Tab3Section:NewButton("Event Notifier | Working", "Cant Afford Well This Helpd", function()
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+      		print("Loaded")
 end)
 
 Tab3Section:NewButton("AutoPlayAgain | Working", "This is so usefull", function()

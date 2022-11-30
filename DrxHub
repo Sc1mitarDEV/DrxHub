@@ -1,7 +1,27 @@
-if game.PlaceId == 6516141723 then
-    loadstring(game:HttpGet("https://pastebin.com/raw/24SXAkzN", true))()
-end
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("🔥DRX HUB | Doors👁️", "DarkTheme")
 
-if game.PlaceId == 12109643 then
-    loadstring(game:HttpGet("https://pastebin.com/raw/JRr2AdPN", true))()
-end
+local Tab1 = Window:NewTab("Home📁")
+local Tab1Section = Tab1:NewSection("Script Information")
+
+local Tab2 = Window:NewTab("Main📜")
+local Tab2Section = Tab2:NewSection("Main Feature Of the Script")
+
+local Tab3 = Window:NewTab("Misc⚙️")
+local Tab3Section = Tab3:NewSection("Cool Op Feature")
+
+--// Buttons Ig
+
+Tab3Section:NewButton("Revive Self | Working", "Cant Afford Well This Helpd", function()
+    game.ReplicatedStorage.Bricks.Revive:FireServer()
+end)
+
+Tab3Section:NewButton("AutoPlayAgain | Working", "This is so usefull", function()
+    game.ReplicatedStorage.Bricks.PlayAgain:FireServer()
+end)
+
+Tab1Section:NewLabel("===============================")
+Tab1Section:NewLabel("Doors 👁️ | Supported")
+Tab1Section:NewLabel("Made By Sc1Karl")
+Tab1Section:NewLabel("Released 11 / 30 / 22")
+Tab1Section:NewLabel("===============================")
